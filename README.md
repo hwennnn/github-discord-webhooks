@@ -1,6 +1,14 @@
 # Github-Discord Webhooks
 
-## Run locally
+## Description
+
+A customised self-hosted webhook server to send messages to Discord Channel when there are new activities in Github repository
+
+## Screenshots
+
+![Screenshot Example](docs/screenshot.png)
+
+## Run locally with Docker
 
 ```bash
 docker build -t github-discord-webhooks .
@@ -11,7 +19,7 @@ docker run -d -p 8080:8080 \
 github-discord-webhooks
 ```
 
-## Deploy to GCP
+## Deploy the Container to GCP Cloud Run
 
 ```bash
 gcloud builds submit --tag gcr.io/{YOUR_PROJECT_NAME}/{CONTAINER_NAME}
