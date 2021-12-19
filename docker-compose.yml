@@ -7,5 +7,5 @@ services:
     volumes:
       - .:/usr/src/app
     environment:
-      DISCORD_CLIENT_PRIVATE: YOUR_CLIENT_PRIVATE
-      DISCORD_CHANNEL_ID: YOUR_CHANNEL_ID
+      - DISCORD_CLIENT_PRIVATE=${DISCORD_CLIENT_PRIVATE:?your client private not set}
+      - DISCORD_CHANNEL_ID=${DISCORD_CHANNEL_ID:?your discord channel id not set}
