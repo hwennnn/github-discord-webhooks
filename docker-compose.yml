@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  server:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/usr/src/app
+    environment:
+      DISCORD_CLIENT_PRIVATE: YOUR_CLIENT_PRIVATE
+      DISCORD_CHANNEL_ID: YOUR_CHANNEL_ID

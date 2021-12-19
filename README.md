@@ -10,13 +10,10 @@ A customised self-hosted webhook server to send messages to Discord Channel when
 
 ## Run locally with Docker
 
-```bash
-docker build -t github-discord-webhooks .
+First, update the env variables with your own discord client private and channel id.
 
-docker run -d -p 8080:8080 \
--e DISCORD_CLIENT_PRIVATE='YOUR_CLIENT_PRIVATE' \
--e DISCORD_CHANNEL_ID='YOUR_CHANNEL_ID' \
-github-discord-webhooks
+```bash
+docker-compose up
 ```
 
 ## Deploy the Container to GCP Cloud Run
